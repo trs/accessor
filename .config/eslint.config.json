@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc.json",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "no-eq-null": "off",
+    "eqeqeq": ["error", "always", {"null": "ignore"}],
+    "@typescript-eslint/ban-types": ["error", {"types": {}, "extendDefaults": true}],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": ["variableLike", "function"], "format": ["camelCase"]
+      }
+    ]
+  }
+}
